@@ -9,14 +9,14 @@ import { useSelector } from 'react-redux'
 const data = [
     {
         id: '1224',
-        title: 'Buscar rutas',
-        image: 'https://image.flaticon.com/icons/png/512/224/224592.png',
+        title: 'Buscar Zona WiFi',
+        image: 'https://cdn2.iconfinder.com/data/icons/housekeeping-home-services-innovicons-color/128/button-Wi-Fi-network-it-specialist-512.png',
         screen: 'MapScreen'
     },
     {
         id: '4354',
-        title: 'Metodo de pago',
-        image: 'https://cdn3.iconfinder.com/data/icons/ecommerce-and-shopping-1/512/Payment_Method-512.png',
+        title: 'Zonas WiFi offline',
+        image: 'https://image.flaticon.com/icons/png/512/2039/2039012.png',
         screen: 'EatsScreen'
     },
 ]

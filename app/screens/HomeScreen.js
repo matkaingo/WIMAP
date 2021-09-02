@@ -17,7 +17,7 @@ const HomeScreen = () => {
         <Screen style={tw`bg-white h-full`}>
             <View style={tw`p-5`}>
                 <Image
-                    source={require('../images/viatori.png')}
+                    source={require('../images/logo.png')}
                     style={styles.logo}
                 />
                 <View style={tw`mb-3`}>

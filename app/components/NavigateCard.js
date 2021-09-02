@@ -20,7 +20,9 @@ const NavigateCard = () => {
             <View style={tailwind`border-t border-gray-100 flex-shrink relative z-20 bg-white`}>
                 <View style={tailwind`bg-white pb-2`}>
                     <GooglePlacesAutocomplete
-                        placeholder='A donde vas?'
+                        placeholder='A cual zona WiFi gratis quieres ir?'
+                        
+                        //Esto cambiarlo por la lista de zonas wi fi gratis
                         nearbyPlacesAPI="GooglePlacesSearch"
                         debounce={400}
                         onPress={(data, details = null) => {
@@ -49,8 +51,8 @@ const NavigateCard = () => {
                         style={tailwind`flex-row bg-black w-24 px-4 py-3 rounded-full border border-black`}
                         onPress={() => navigation.push('RideOptionsCard')}
                     >
-                        <Icon name="bus" type="font-awesome" color="white" size={16} />
-                        <Text style={tailwind`text-white text-center pl-3`}>Bus</Text>
+                        <Icon name="wifi" type="font-awesome" color="white" size={16} />
+                        <Text style={tailwind`text-white text-center pl-3`}>Go</Text>
                     </TouchableOpacity>
 
                 </View>

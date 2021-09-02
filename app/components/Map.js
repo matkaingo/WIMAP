@@ -30,7 +30,7 @@ const Map = () => {
     }, [origin, destination, GOOGLE_MAPS_APIKEY])
     
     const getTravelTime = async () => {
-        const URL = `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${origin.description}&destinations=${destination.description}&key=${GOOGLE_MAPS_APIKEY}`
+        const URL = `https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=${origin.description}&destinations=${destination.description}&key=${GOOGLE_MAPS_APIKEY}`
         const data = await fetch(URL).then(response => response.json())
         if(data.status !== 'OK') return alert(data.error_message)
         dispatch(setTravelTimeInformation(data.rows[0].elements[0]))

@@ -10,24 +10,24 @@ import { selectDestination, selectOrigin, selectTravelTimeInformation } from '..
 const data = [
     {
         id: "Bus-1",
-        title: "Bus ruta 1",
+        title: "WiFi SantaGema",
         multiplier: 1,
         image: "https://findicons.com/files/icons/929/transportation/256/bus.png",
-        time:"5 minutos"
+        time:"Puede haber mejor conexion"
     },
     {
         id: "Bus-2",
-        title: "Bus ruta 2",
+        title: "WiFi Laureles",
         multiplier: 1.2,
         image: "https://assets.webiconspng.com/uploads/2017/09/Bus-PNG-Image-83878.png",
-        time:"9 minutos"
+        time:"Te queda mas cerca"
     },
     {
         id: "Bus ruta 3",
-        title: "Bus ruta 3",
+        title: "WiFi Envigado",
         multiplier: 1.75,
         image: "https://assets.webiconspng.com/uploads/2017/09/Bus-PNG-Image-54421.png",
-        time:"6 minutos"
+        time:"Puede haber mejor conexion"
     },
 ]
 
@@ -67,7 +67,7 @@ const RideOptionsCard = () => {
                         style={tailwind`p-3`}
                     />
                 </TouchableOpacity>
-                <Text style={tailwind`text-center text-xl font-bold`}>Selecciona una ruta - {travelTimeInformation?.distance?.text}</Text>
+                <Text style={tailwind`text-center text-xl font-bold`}>Algunas Alternativas - {travelTimeInformation?.distance?.text}</Text>
             </View>
             <View style={tailwind`flex-1 mt-2`}>
                 <FlatList
@@ -85,7 +85,7 @@ const RideOptionsCard = () => {
                             <View style={tailwind`flex-row items-center justify-between flex-1`}>
                                 <View>
                                     <Text style={tailwind`text-xl font-bold text-black`}>{item.title}</Text>
-                                    <Text style={tailwind`text-gray-600`}> Sale en {item.time}, tiempo de recorrido {travelTimeInformation?.duration?.text} minutos</Text>
+                                    <Text style={tailwind`text-gray-600`}> {item.time}, tiempo de recorrido {travelTimeInformation?.duration?.text} minutos</Text>
                                 </View>
 
                             </View>
