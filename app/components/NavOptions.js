@@ -30,7 +30,7 @@ const NavOptions = () => {
             data={data}
             renderItem={({ item }) => (
                 <TouchableOpacity 
-                    style={tw`p-5 pl-6 pr-12 pb-4 pt-4 bg-gray-200 mr-4 w-40 rounded-lg`}
+                    style={tw`p-5 pl-6 pr-12 pb-4 pt-4 bg-gray-200 mr-6 w-40 rounded-lg`}
                     onPress={() => navigation.push(item.screen)}
                     disabled={!origin}
                 >

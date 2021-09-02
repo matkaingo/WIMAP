@@ -12,21 +12,21 @@ const data = [
         id: "Bus-1",
         title: "WiFi SantaGema",
         multiplier: 1,
-        image: "https://findicons.com/files/icons/929/transportation/256/bus.png",
+        image: "https://cdn.pixabay.com/photo/2016/03/31/18/42/gauge-1294568_640.png",
         time:"Puede haber mejor conexion"
     },
     {
         id: "Bus-2",
         title: "WiFi Laureles",
         multiplier: 1.2,
-        image: "https://assets.webiconspng.com/uploads/2017/09/Bus-PNG-Image-83878.png",
-        time:"Te queda mas cerca"
+        image: "https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/clock-icon.png",
+        time:"Te queda mas cerca, menos tiempo de recorrido para llegar"
     },
     {
         id: "Bus ruta 3",
         title: "WiFi Envigado",
         multiplier: 1.75,
-        image: "https://assets.webiconspng.com/uploads/2017/09/Bus-PNG-Image-54421.png",
+        image: "https://cdn.pixabay.com/photo/2016/03/31/18/42/gauge-1294568_640.png",
         time:"Puede haber mejor conexion"
     },
 ]
@@ -110,8 +110,8 @@ export default RideOptionsCard
 
 const styles = StyleSheet.create({
     image: {
-        width: 100,
-        height: 100,
+        width: 80,
+        height: 80,
         resizeMode: 'contain'
     }
 })
